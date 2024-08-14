@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper{
+  width: 100vw; /*Para que ocupe el 100% de la pantalla*/
+  height: 100vh; /* para que tenga el 100% de la pantalla*/
+  background-color: #191c32;
+  color: #fff ;
+}
+.wrapper p{
+  font-size: 1.2em;
+}
+.wrapper .icono img{
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content:space-between; /*Para separar los elementos uno a una esquina y el otro en la otra*/
+  padding: 2em; /*Crear un espacio dentro del navegador*/
+}
+
+.brand{
+  margin-top: -7px; /*Mirar aplicación del video tutorial para ajustar elementos*/
+}
+
+.brand span {
+color: aqua;
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content:space-around;
+  margin-left: 900px;
+}
+
+.menu li{
+  list-style:none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px; /*Espacio 10 px de arriba y abajo y 20 de derecha e izquierda*/
+}
+
+.menu .active{
+  color: aqua; /*Preguntar por que se cambia en el a y no en el li (La class(*/
+}
+
+.menu a:hover{
+  background-color: aqua;
+  color: #191c32;
+  transition: ease-in .4s;
+}
+
+.main {
+  margin:0 auto; /*Esto es para centrar*/
+  width: 80vw;
+  height: 80vh;
+  display: grid; /*Crea una cuadrícula*/
+  grid-template-columns: repeat(2,1fr); /*son 2 cuadros y cogemos 1 fracción*/
+  align-items: center;
+}
+
+h1{
+  font-size: 3em;
+}
+
+span{
+  color: aqua;
+}
+
+.download-cv{
+  padding: 10px 20px;
+  background-color: aqua;
+  border:none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer; /*Cambia a click*/
+  box-shadow: 1px 3px 11px 5px rgba(102, 231, 200, .69);
+}
+
+.download-cv:hover{
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.main img{
+  width: 350px;
+  border: 7px solid aqua;
+  height: 520px;
+  z-index: 1; /*Para que se coloque encima del otro */
+}
+
+.about{
+  display: grid;
+  grid-template-columns:repeat(10,1fr);
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+.about p{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.about img{
+  width: 100%;
+  height: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10; /*ocupa desde la columna 5 hasta la 10*/
+  padding: 3em;
+}
+
+.about-info h2{
+  font-size: 2em;
+  color: #191c32;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
+  margin-top: 5px;
+  margin-bottom:2.5em ;
+}
+
+.about p{
+  margin-bottom: 1em;
+}
+.portfolio{
+  width: 100vw;
+  background-color: #191c32;
+  color: #fff;
+  height: 100vh;
+}
+.portfolio-headings{
+  width: 100vw;
+  padding: 5em;
+}
+
+.portfolio-headings h2{
+  font-size: 2.5em;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin:0 auto;
+  display: flex;
+  
+  justify-content: center;
+}
+
+.card{
+  width: 300px;
+  color: #fff;
+  height: 350px;
+  background-color:rgb(31, 20, 91) ;
+  margin: 1em;
+}
+
+.card__img1{
+  width: 100%;
+  height: 135px;
+  background-image: url(../junior.png) ;
+  background-size:cover;/*Ocupa la totalidad de la imagen*/
+}
+.card__img2{
+  width: 100%;
+  height: 140px;
+  background-image: url(../novato2.png) ;
+  background-size:cover;/*Ocupa la totalidad de la imagen*/
+}
+.card__img3{
+  width: 100%;
+  height: 140px;
+  background-image: url(../NOVATO3.png) ;
+  background-size:cover;/*Ocupa la totalidad de la imagen*/
+}
+
+.card__title{
+  padding: 20px;
+}
+
+.card__projects-links{
+  display: flex;
+  justify-content: space-evenly; /*espacios equitativos entre los elementos */
+
+}
+
+.card__projects-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__projects-links i{
+  margin-top: 30px;
+  font-size: 3.2em;
+}
+
+.card .project-details{
+  margin:0 auto;
+  margin: 1em;
+  width: 70%;
+  display: flex;
+  
+}
+
+.card .project-details a {
+  text-decoration: none;
+  color: #191c32;
+  text-transform:uppercase ;
+}
+.proyect-details-content{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1em;
+}
+.contact-section{
+  width: 100vw;
+  height:100vh;
+  background-color: #191c32;
+  color: #fff;
+}
+.contact-headings{
+  padding: 2em;
+  font-size: 2em;
+}
+.form{
+  display: block;
+}
+.container-contact h4 {
+  margin-left: 800px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+.container-contact input , .container-contact textarea{
+  display: block;
+  margin-left: 800px;
+  width: 400px;
+  margin-bottom: 10px;
+}
+.btn-submit{
+  margin-left: 800px;
+  width: 100px;
+}
+.redes{
+  margin-top: 180px;
+}
+.redes i{
+  display: block;
+}
+.redes .insta{
+  display: flex;
+}
+.redes .insta p {
+  margin-left: 10px;
+}
+
+.redes .twitter{
+  display: flex;
+  margin-top: 20px;
+}
+.redes .twitter p {
+  margin-left: 10px;
+}
+.redes .face{
+  display: flex;
+  margin-top: 20px;
+}
+.redes .face p {
+  margin-left: 10px;
+}
+.redes .what{
+  display: flex;
+  margin-top: 20px;
+}
+.redes .what p {
+  margin-left: 10px;
+}
+@media screen and (max-width:375px) {
+  .wrapper{
+    position: relative;
+  }
+  .wrapper ul{
+    display: block;
+    position: absolute;
+  }
+  .wrapper ul li{
+    margin-top: 50px;
+  }
+  .wrapper .icono img{
+    display: block;
+    position: absolute;
+    left: 270px;
+    font-weight: 1.5em;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .activa{
+    transform: translateX(-600px);
+  }
+  .wrapper .contmenu{
+    background-color:#222329ba;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5 ease;
+    z-index: 1;
+    
+  }
+  .info-content{
+    margin-left: 20px;
+    width: 300px;
+    position: absolute;
+    top: 200px;
+  }
+  .wrapper a{
+    margin-left: 30px;
+  }
+  .info-content h1{
+   font-size:1.5em;
+   
+  }
+  .wrapper img{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 400px;
+    margin-left: 20px;
+    z-index: 2;
+  }
+
+  
+  .about{
+    display: flex;
+    position: relative;
+    background-color: #191c32;
+  }
+  .about img {
+    display: none;
+  }
+  .about h2{
+    color: white;
+    position: absolute;
+    width: 300px;
+    left: 70px;
+    top: 100px;
+  }
+  .divider{
+    position: absolute;
+    left: 70px;
+    top: 140px;
+  }
+  .about p{
+    width: 300px;
+    font-size: 1.2em;
+    color:#fff;
+  } 
+  .portfolio{
+    position: relative;  
+  }
+  .portfolio-headings h2{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  .portfolio .divider{
+    position: absolute;
+    top: 60px;
+    left: 15px;
+  }
+  .container .x{
+    display: none;
+  }
+  .portfolio .container {
+    display: block;
+    position: absolute;
+  }
+  .contact-section{
+    position: relative;
+  }
+  
+  .contact-headings h2{
+    position: absolute;
+    width: 375px;
+    left: 10px;
+    font-size: 1.3em;
+  }
+  .contact-headings .divider{
+    left:15px;
+    top: 110px;
+  }
+  .container-contact{
+    height: 600px;
+  }
+  .contact-form h4{
+    position: absolute;
+    right: -25px;
+    top: 230px;
+    width: 375px;
+    color: white;
+  }
+  .form .a input {
+    position: absolute;
+    right: 75px;
+    top: 341px;
+    width: 375px;
+    width: 280px;
+    
+  }
+  .form input{
+    position: absolute;
+    right: 75px;
+    top: 360px;
+    width: 375px;
+    width: 280px;
+  }
+  
+  .form textarea{
+    position: absolute;
+    right: 75px;
+    top: 378px;
+    width: 375px;
+    width: 280px;
+  }
+ .form .btn-submit{
+  position: absolute;
+    right: 75px;
+    top: 525px;
+    width: 280px;
+ }
+ .redes{
+  position: absolute;
+  top: 600px;
+ }
+ .about .movile{
+  display: none;
+ }
+ .about p{
+  top:20px;
+  position: absolute;
+  top:240px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+ }
+ 
+
+ 
+}
+  
